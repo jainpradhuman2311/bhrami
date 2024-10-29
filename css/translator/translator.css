@@ -421,6 +421,9 @@
 .dropdown-menu {
   margin-left: 0;
 }
+.card-bottom{
+  flex-direction: row;
+}
 /* bright / dark mode */
 .pintura-editor {
   --color-background: 255, 255, 255;
@@ -449,6 +452,10 @@
 @media (max-width: 800px) {
   .container {
     width: 33rem;
+  }
+  
+  .card-bottom{
+    flex-direction: column;
   }
 
   .PinturaNavSet {
