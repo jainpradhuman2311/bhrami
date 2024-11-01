@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <title>Bhrami</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/vendor.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="js/pintura/pintura.css" />
-    <link rel="stylesheet" href="css/translator/translator.css" />
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
-    <script
+   <head>
+      <!--- basic page needs
+         ================================================== -->
+      <meta charset="utf-8">
+      <title>Flare</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- mobile specific metas
+         ================================================== -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS
+         ================================================== -->
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/translate.css">
+      <link rel="stylesheet" href="js/pintura/pintura.css">
+      <link rel="stylesheet" href="css/vendor.css">
+      <!-- script
+         ================================================== -->
+      <script src="js/modernizr.js"></script>
+      <script defer src="js/fontawesome/all.min.js"></script>
+      <!-- favicons
+         ================================================== -->
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+      <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
@@ -32,726 +35,930 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-  </head>
-
-  <body id="top">
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-      <div id="loader" class="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
+   </head>
+   <body id="top">
+      <!-- preloader
+         ================================================== -->
+      <div id="preloader">
+         <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
       </div>
-    </div>
-
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-      <div class="header-logo">
-        <a class="site-logo" href="index.html">
-          <img src="images/logo3.png" alt="Homepage" />
-        </a>
-      </div>
-
-      <div class="header-email">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"
-          />
-        </svg>
-        <a href="mailto:#0">okgurdew@gmail.com</a>
-      </div>
-    </header>
-    <!-- end s-header -->
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro s-intro--slides">
-      <div class="intro-slider">
-        <div
-          class="intro-slider-img bg-opacity-40"
-          style="background-image: url(images/slides/slide-01.jpg)"
-        ></div>
-        <div
-          class="intro-slider-img"
-          style="background-image: url(images/slides/slide-02.jpg)"
-        ></div>
-        <div
-          class="intro-slider-img"
-          style="background-image: url(images/slides/slide-03.jpg)"
-        ></div>
-      </div>
-
-      <div class="grid-overlay">
-        <div></div>
-      </div>
-
-      <div class="row intro-content">
-        <div class="column">
-          <div class="intro-content__text">
-            <h3>The Foundation of Indian Writing</h3>
-
-            <h1>
-              Uncover the secrets <br />
-              of Bhrami Lipi. <br />
-              A journey through <br />
-              ancient wisdom awaits!
-            </h1>
-          </div>
-          <!-- end intro-content__text -->
-
-          <div class="intro-content__bottom">
-            <div class="intro-content__counter-wrap">
-              <h4>Today's time</h4>
-
-              <div class="counter">
-                <!-- <div class="counter__time days" id="days">
-                  0
-                  <span>D</span>
-                </div> -->
-                <div class="counter__time hours" id="hours">
-                  0
-                  <span>H</span>
-                </div>
-                <div class="counter__time minutes" id="minutes">
-                  0
-                  <span>M</span>
-                </div>
-                <div class="counter__time seconds" id="seconds">
-                  0
-                  <span>S</span>
-                </div>
-              </div>
-              <!-- end counter -->
-            </div>
-            <!-- end intro-content__counter-wrap -->
-
-            <div class="intro-content__notify">
-              <button
-                type="button"
-                class="btn--stroke btn--small modal-trigger"
-              >
-                Notify Me
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M24 12l-9-9v7h-15v4h15v7z" />
-                </svg>
-              </button>
-            </div>
-            <!-- end intro-content__notify -->
-          </div>
-          <!-- end intro-content__bottom -->
-        </div>
-        <!-- end column -->
-      </div>
-      <!--  end intro-content -->
-
-      <div class="modal">
-        <div class="modal__inner">
-          <span class="modal__close"></span>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-            />
-          </svg>
-
-          <h3>Sign Up</h3>
-          <p>
-            Be the first to know about the latest updates and get exclusive
-            offer on our grand opening.
-          </p>
-
-          <form id="mc-form" class="group mc-form" novalidate="true">
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="email h-full-width h-text-center h-add-half-bottom"
-              id="mc-email"
-              placeholder="Email Address"
-              required=""
-            />
-            <input
-              type="submit"
-              name="subscribe"
-              value="Subscribe"
-              class="btn--small h-full-width"
-            />
-            <label for="mc-email" class="subscribe-message"></label>
-          </form>
-        </div>
-        <!-- end modal inner -->
-      </div>
-      <!-- end modal -->
-
-      <ul class="intro-social">
-        <li>
-          <a href="https://www.facebook.com/share/aytFEk9LmPVULqta/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/pragyanshsagar_/profilecard/?igsh=MXNrdmp2d2xvc2t1Zw=="><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://play.google.com/store/apps/details?id=com.goodlife.bramhi"><i class="fab fa-google-play" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://youtube.com/@shrutaaraadhak_sant_pragyansh?si=WRQFhGioeCg7SeZL"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-      <!-- end intro social -->
-
-      <div class="intro-scroll">
-        <a href="#info" class="scroll-link smoothscroll"> Scroll For More </a>
-      </div>
-      <!-- end intro scroll -->
-    </section>
-    <!-- end s-intro -->
-
-    <!-- info
-    ================================================== -->
-    <section id="info" class="s-info">
-      <div class="vert-line"></div>
-
-      <div class="row info-content">
-        <div class="column">
-          <nav class="tab-nav">
-            <ul class="tab-nav__list">
-              <li class="active" data-id="tab-about">
-                <a href="#0">
-                  <span>About</span>
-                </a>
-              </li>
-              <li data-id="tab-services">
-                <a href="#0">
-                  <span>Translate</span>
-                </a>
-              </li>
-              <li data-id="tab-contact">
-                <a href="#0">
-                  <span>Game</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- end tab-nav -->
-
-          <div class="tab-content">
-            <!-- 01. tab about -->
-            <div id="tab-about" class="tab-content__item">
-              <div class="row tab-content__item-header">
-                <div class="column">
-                  <h1>Jai Jinendra.</h1>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <p class="lead">
-                    Bhrami Lipi holds a significant place in Jain literature and
-                    philosophy. It serves as the script for many ancient texts,
-                    preserving the teachings and doctrines of Jainism. Through
-                    Bhrami, the essence of Jain beliefs has been transmitted
-                    across generations.
-                  </p>
-
+      <!-- header
+         ================================================== -->
+      <header class="s-header">
+         <div class="s-header__logo">
+            <a href="index.html">
+            <img src="images/logo3.png" alt="Homepage">
+            </a>
+         </div>
+         <div class="s-header__content">
+            <nav class="s-header__nav-wrap">
+               <ul class="s-header__nav">
+                  <li>
+                     <a class="smoothscroll" href="#hero" title="Intro">Home</a>
+                  </li>
+                  <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                  <li class="has-submenu">
+                     <a class="smoothscroll" href="#services" title="Services">Tools</a>
+                     <ul class="submenu">
+                        <li><a href="#team">Translate</a></li>
+                        <li><a href="#vision">Image Editor</a></li>
+                        <li><a href="#vision">Game</a></li>
+                        <li><a href="#vision">Multi Keyboard</a></li>
+                     </ul>
+                  </li>
+                  <li><a class="smoothscroll" href="#portfolio" title="Portfolio">Shastra</a></li>
+                  <li><a class="smoothscroll" href="#portfolio" title="Portfolio">Dictonary</a></li>
+                  <li><a class="smoothscroll" href="#contact" title="Contact">Developer</a></li>
+               </ul>
+            </nav>
+            <!-- end s-header__nav-wrap -->
+            <a href="mailto:goodlifejainfoundation@gmail.com" class="btn btn--primary btn--small">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
+               </svg>
+               Get In Touch
+            </a>
+         </div>
+         <!-- end header-content -->
+         <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+      </header>
+      <!-- end s-header -->
+      <!-- hero
+         ================================================== -->
+      <section id="hero" class="s-hero target-section">
+         <div class="s-hero__bg">
+            <div class="gradient-overlay"></div>
+         </div>
+         <div class="row s-hero__content">
+            <div class="column">
+               <h1 class="header-font">Bhrami</h1>
+               <div class="s-hero__content-about">
                   <p>
-                    The script embodies the values of non-violence, truth, and
-                    asceticism central to Jain philosophy. Its inscriptions on
-                    temple walls and manuscripts offer a glimpse into the rich
-                    spiritual heritage of the Jain community. Bhrami Lipi not
-                    only represents a form of communication but also a
-                    historical bridge to understanding Jain cultural practices.
+                     Uncover the secrets <br />
+                     of Bhrami Lipi. <br />
+                     A journey through <br />
+                     ancient wisdom awaits!
                   </p>
-
-                  <div class="row">
-                    <div class="column large-6 tab-full">
-                      <h4>More About Us.</h4>
-                      <p>
-                        Our website aims to explore the profound impact of
-                        Bhrami Lipi on Jain literature. Discover the historical
-                        context and evolution of this script, and how it
-                        continues to influence modern Jain practices. Join us in
-                        celebrating this ancient script as a vital part of Jain
-                        heritage.
-                      </p>
-                    </div>
-                    <div class="column large-6 tab-full">
-                      <h4>Adinath Bhagwan and Bhrami Lipi</h4>
-                      <p>
-                        Adinath Bhagwan, the first Tirthankara of Jainism, is
-                        often associated with the preservation of ancient
-                        scripts, including Bhrami Lipi. His teachings emphasized
-                        the importance of knowledge and written communication in
-                        spreading Jain philosophy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  <footer>
+                     <div class="s-hero__content-social">
+                        <a href="https://www.facebook.com/share/aytFEk9LmPVULqta/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.goodlife.bramhi"><i class="fab fa-google-play" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/pragyanshsagar_/profilecard/?igsh=MXNrdmp2d2xvc2t1Zw=="><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://youtube.com/@shrutaaraadhak_sant_pragyansh?si=WRQFhGioeCg7SeZL"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                     </div>
+                  </footer>
+               </div>
             </div>
-            <!-- end 01. tab about -->
-
-            <!-- 02. tab services -->
-            <div id="tab-services" class="tab-content__item">
-              <div class="row tab-content__item-header">
-                <div class="column">
-                  <h1>Lets Translate.</h1>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <p class="lead">
-                    Introducing our innovative translation tool! Now, you can
-                    effortlessly convert any text into Bhrami script with just a
-                    click. This feature aims to bridge the gap between modern
-                    communication and ancient writing systems, allowing users to
-                    explore and appreciate the beauty of Bhrami.
-                  </p>
-                  <!-- <p>
-                    Simply enter your text in the provided input box, and watch
-                    as it transforms into Bhrami script instantly. Whether
-                    you're a student, researcher, or simply curious about this
-                    historical script, our tool provides an accessible way to
-                    engage with the rich heritage of Bhrami. Embrace the past
-                    while communicating in the present!
-                  </p> -->
-                </div>
-              </div>
-
-              <div
-                class="row services-list block-large-1-2 block-medium-1-2 block-tab-full"
-              >
-                <div class="trans">
-                  <div class="container">
-                    <div class="card input-wrapper">
-                      <div class="from">
-                        <!-- <span class="heading">From :</span> -->
-                        <div class="dropdown-container" id="input-language">
-                          <div class="dropdown-toggle">
-                            <ion-icon name="globe-outline"></ion-icon>
-                            <span class="selected" data-value="hi"
-                              >Hindi (हिन्दी)</span
-                            >
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                          </div>
-                          <ul class="dropdown-menu">
-                            <li class="option active">DropDown Menu Item 1</li>
-                            <li class="option">DropDown Menu Item 2</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="text-area">
-                        <textarea
-                          id="input-text"
-                          cols="80"
-                          rows="12"
-                          placeholder="Enter your text here"
-                        ></textarea>
-                        <div class="chars">
-                          <span id="input-chars">0</span> / 5000
-                        </div>
-                      </div>
-                      <div
-                        class="card-bottom"
-                        style="display: flex;"
-                      >
-                        <!-- <label for="upload-document">
-                        <span id="upload-title">Choose File</span>
-                        <ion-icon name="cloud-upload-outline"></ion-icon>
-                        <input type="file" id="upload-document" hidden />
-                      </label>
-                      &nbsp;&nbsp;&nbsp;&nbsp; -->
-                        <button id="pasteButton">
-                          <ion-icon name="clipboard-outline"></ion-icon> Paste
-                        </button>
-
-                        <button id="speak-input-btn">
-                          <ion-icon name="volume-high-outline"></ion-icon> Speak
-                          Input
-                        </button>
-                      </div>
-                    </div>
-
-                    <div class="center">
-                      <div class="swap-position">
-                        <ion-icon name="swap-horizontal-outline"></ion-icon>
-                      </div>
-                    </div>
-
-                    <div class="card output-wrapper">
-                      <div class="to">
-                        <!-- <span class="heading">To :</span> -->
-                        <div class="dropdown-container" id="output-language">
-                          <div class="dropdown-toggle">
-                            <ion-icon name="globe-outline"></ion-icon>
-                            <span class="selected" data-value="br"
-                              >Bhrami Lipi (𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻)</span
-                            >
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                          </div>
-                          <ul class="dropdown-menu">
-                            <li class="option active">DropDown Menu Item 1</li>
-                            <li class="option">DropDown Menu Item 2</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div id="output-text"></div>
-                      <div class="card-bottom">
-                        <!-- <button id="download-btn">
-                        <span>Download</span>
-                        <ion-icon name="cloud-download-outline"></ion-icon>
-                      </button>
-                      &nbsp;&nbsp;&nbsp;&nbsp; -->
-                        <button id="copy-btn" onclick="copyBhrami()">
-                          <ion-icon name="copy-outline"></ion-icon>
-                          Copy
-                        </button>
-
-                        <button id="speak-output-btn">
-                          <ion-icon name="volume-high-outline"></ion-icon> Speak
-                          Output
-                        </button>
-
-                        <button id="image-editor-btn" onclick="openEditor()">
-                          <ion-icon name="image-outline"></ion-icon> Edit Image
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="copy-message">Copied to clipboard!</div>
-                </div>
-                <div
-                  class="inline-editor"
-                  id="editor"
-                  style="
-                    width: 74vw;
-                    height: 600px;
-                    display: none;
-                    margin: 30px auto;
-                  "
-                ></div>
-                <p style="display: none">
-                  <img
-                    class="inline-result"
-                    src=""
-                    alt=""
-                    style="display: none"
-                  />
+         </div>
+         <div class="s-hero__video">
+            <a class="s-hero__video-link" href="https://player.vimeo.com/video/1025487433?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-lity="">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M21 12l-18 12v-24z"/>
+               </svg>
+               <span class="s-hero__video-text">Play Video</span>
+            </a>
+         </div>
+         <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+            Scroll Down
+            </a>
+         </div>
+      </section>
+      <!-- end s-hero -->
+      <!-- about
+         ================================================== -->
+      <section id="about" class="s-about">
+         <div class="horizontal-line"></div>
+         <div class="row">
+            <div class="column large-12">
+               <div class="section-title" data-num="About" data-aos="fade-up">
+                  <h3 class="h6" style="color: aliceblue;">Bhrami Lipi</h3>
+               </div>
+            </div>
+            <div class="column large-6 w-900-stack s-about__intro-text">
+               <h3 class="display-1" data-aos="fade-up">
+                  Let's know about </br>BRAHMI SCRIPT.</br>
+                  The first initiative towards women's education
+               </h3>
+               <p class="lead" data-aos="fade-up">
+                  When the third Sukhama-Dukhama period of the Hundavasarpini period was nearing its end, the first Tirthankar of the era, Shri Rishabhdev Ji, was born from the womb of Mata Marudevi in the courtyard of his father Nabhiraya. 
+                  <a id="read-more" href="javascript:void(0)">Read More</a>
+               </p>
+            </div>
+            <div class="column large-6 w-900-stack s-about__photo-block">
+               <div class="s-about__photo" data-aos="fade-up"></div>
+            </div>
+         </div>
+         <div class="row block-large-1-2 block-tab-full s-about__process item-list">
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#1</h3>
+               <p>
+                  At the end of the Bhogabhumi, when the Kalpavriksha-affected subjects came to the court of the fourteenth Kulakara king Nabhirayaji, he sent them to his son Rishabadeva, the holder of tri-knowledge (Mati-Srut-Avadhi Jnana). Rishabadeva taught the people the practice of the six karmas (Asi, Masi, Krishi, Vidya,Vanijya and Shilpa). People made their lives easier with the help of these six karmas.
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#2</h3>
+               <p>
+                  Of these six actions, the action called Vidya(education) is the deepest, the widest and the best. Rishabhdev taught the same to his 101 sons and also to his 2 daughters by not considering them inferior to his sons. Adi Vidhata also preached to the general public that "unless women are educated, our next generation cannot be educated." It was difficult but people accepted the sermon as a royal decree. That is why Maharaj Rishabhdev ji started this preaching from his own daughters.
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#3</h3>
+               <p>
+                  The daughters named Brahmi and Sundari, who were entering their youth, were called by King Rishabhdev and were told  the importance of education in life, an educated person was called a guide in society; a man without education was called an animal. Thus, knowing the importance of education in life, Brahmi and Sundari, with great humility, requested their father ,King Rishabhdev ji to give them knowledge,  gift of education, so that they could enrich their lives and of thier loved ones as well.
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#4</h3>
+               <p>
+                  Seeing his two daughters eligible and enthusiastic for receiving education, he started educating them in the auspicious Nakshatra-muhurta etc.
+                  'Brahmi 'was the eldest daughter, so he donated' Akshar Vidya 'by making her sit on the right hand side and' Ank Vidya 'by making' Sundari 'sit on the left hand side.
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#5</h3>
+               <p>
+                  Bhog bhoomi exists till the third period(era), that is, ten types of useful items of life are easily accessible to humans from Kalpavriksha during this period. The creatures born in this land got the desired thing only by contemplating in front of the trees without making any effort. There were no friends, no relations, no connection with anyone then.                
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#6</h3>
+               <p>
+                  Language is a means of expressing one's feelings. The art of writing the language is called 'script'. At the end of the third period there was language. Which was it? Prakrit language is the language of nature. The language which has been cultured and refined is called Sanskrit language.
+                  At the end of the third period, there was interaction through the 'Prakrit language', but the language could not be written. King Rishabhdev Ji fulfilled this deficiency and taught 'Lipi Vidya' to his elder daughter Brahmi.                 
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#7</h3>
+               <p>
+                  Every language has its own script like Sanskrit, Apabhramsha, Hindi, Pali,etc. have their script as 'devnagri'. The script of the English language is Roman and that of Punjabi language is' Gurmukh '. Thus, independent languages have their own scripts. By the way, you can write any language from any script; Such as -॥श्री आदिनाथाय नमः॥ .It is written in the Devanagari script of Sanskrit language. You can write it in Roman script; For example, Shri Adityanath Namah. Similarly, you can write any language in any script but not in a complete and standard way. To write completely and correctly, you need to use the script of that language.                
+               </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+               <h3 class="item-title">#8</h3>
+               <p>
+                  The natural language of human beings is called  the prakrit language. It's script was taught by King Rishabhdev to his daughter Brahmi and by Brahmi to everyone. For this reason, the script of the Prakrit language came to be known as Brahmi. Brahmi script. 
+                  King Rishabhdev taught Brahmi to write by sitting on the right side, which is why 99% of the world's scripts are written from left to right. Because the first script of this Avasarpini period is' Brahmi 'and on close study of all the scripts so far, it is known that all the scripts are derived from the Brahmi script. See - Indian Ancient Script Mala - Gaurishankar Ojha *
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- end s-about -->
+      <!-- services
+         ================================================== -->
+      <section id="services" class="s-services">
+         <div class="row">
+            <div class="column large-12">
+                <a id="translate" href="javascript:void(0)"><img src="images/symbols/translate.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    Let's Translate.
+                </h1>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <p class="lead" data-aos="fade-up">
+                    Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
                 </p>
-                <div class="secret-div" hidden></div>
-              </div>
-              <!-- end services-list -->
             </div>
-            <!-- end 02. tab services -->
-
-            <!-- 03. tab contact -->
-            <div id="tab-contact" class="tab-content__item">
-              <!-- <div class="row tab-content__item-header">
-                <div class="column">
-                  <h1>Get In Touch With Us.</h1>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <p class="lead">
-                    Voluptates laborum eum quas. Pariatur impedit sit veniam est
-                    et quasi voluptas voluptatem. Cumque hic enim perferendis
-                    amet odit in molestias debitis. Facere nulla qui pariatur
-                    quasi mollitia et. Et dolorem dolorum quo in sit architecto.
-                  </p>
-
-                  <div class="row">
-                    <div class="column large-six tab-full">
-                      <h4>Where to Find Us</h4>
-
-                      <p>
-                        1600 Amphitheatre Parkway<br />
-                        Mountain View, CA<br />
-                        94043 US
-                      </p>
+            <div class="trans">
+                <div class="container">
+                  <div class="card input-wrapper">
+                    <div class="from">
+                      <!-- <span class="heading">From :</span> -->
+                      <div class="dropdown-container" id="input-language">
+                        <div class="dropdown-toggle">
+                          <ion-icon name="globe-outline"></ion-icon>
+                          <span class="selected" data-value="hi"
+                            >Hindi (हिन्दी)</span
+                          >
+                          <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <ul class="dropdown-menu">
+                          <li class="option active">DropDown Menu Item 1</li>
+                          <li class="option">DropDown Menu Item 2</li>
+                        </ul>
+                      </div>
                     </div>
+                    <div class="text-area">
+                      <textarea
+                        id="input-text"
+                        cols="80"
+                        rows="12"
+                        placeholder="Enter your text here"
+                      ></textarea>
+                      <div class="chars">
+                        <span id="input-chars">0</span> / 5000
+                      </div>
+                    </div>
+                    <div
+                      class="card-bottom"
+                      style="display: flex;"
+                    >
+                      <!-- <label for="upload-document">
+                      <span id="upload-title">Choose File</span>
+                      <ion-icon name="cloud-upload-outline"></ion-icon>
+                      <input type="file" id="upload-document" hidden />
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp; -->
+                      <button id="pasteButton">
+                        <ion-icon name="clipboard-outline"></ion-icon> Paste
+                      </button>
 
-                    <div class="column large-six tab-full">
-                      <h4>Follow Us</h4>
+                      <button id="speak-input-btn">
+                        <ion-icon name="volume-high-outline"></ion-icon> Speak
+                        
+                      </button>
+                    </div>
+                  </div>
 
-                      <ul class="link-list">
+                  <div class="center">
+                    <div class="swap-position">
+                      <ion-icon name="swap-horizontal-outline"></ion-icon>
+                    </div>
+                  </div>
+
+                  <div class="card output-wrapper">
+                    <div class="to">
+                      <!-- <span class="heading">To :</span> -->
+                      <div class="dropdown-container" id="output-language">
+                        <div class="dropdown-toggle">
+                          <ion-icon name="globe-outline"></ion-icon>
+                          <span class="selected" data-value="br"
+                            >Bhrami Lipi (𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻)</span
+                          >
+                          <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <ul class="dropdown-menu">
+                          <li class="option active">DropDown Menu Item 1</li>
+                          <li class="option">DropDown Menu Item 2</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="output-text"></div>
+                    <div class="card-bottom">
+                      <!-- <button id="download-btn">
+                      <span>Download</span>
+                      <ion-icon name="cloud-download-outline"></ion-icon>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp; -->
+                      <button id="copy-btn" onclick="copyBhrami()">
+                        <ion-icon name="copy-outline"></ion-icon>
+                        Copy
+                      </button>
+
+                      <button id="speak-output-btn">
+                        <ion-icon name="volume-high-outline"></ion-icon> Speak
+                        
+                      </button>
+
+                      <button id="image-editor-btn" onclick="openEditor()">
+                        <ion-icon name="image-outline"></ion-icon> Edit Image
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="copy-message">Copied to clipboard!</div>
+              </div>
+              <div
+                class="inline-editor"
+                id="editor"
+                style="
+                  width: 74vw;
+                  height: 600px;
+                  display: none;
+                  margin: 30px auto;
+                "
+              ></div>
+              <p style="display: none">
+                <img
+                  class="inline-result"
+                  src=""
+                  alt=""
+                  style="display: none"
+                />
+              </p>
+              <div class="secret-div" hidden></div>
+         </div>
+      </section>
+      
+      <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/editor.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Image Editor.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+     <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/game.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Game.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+     <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/keyboard.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Multi Keyboard.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+     <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/granth.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Jain Granth.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+     <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/dictonary.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Dictonary.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+     <section id="services" class="s-services">
+        <div class="row">
+           <div class="column large-12">
+               <a id="translate" href="javascript:void(0)"><img src="images/symbols/tirth.png" style="width: 5rem; height: 5rem; margin-bottom: 0px;"/></a>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                   Tirth Yatra.
+               </h1>
+           </div>
+           <div class="column large-6 w-900-stack">
+               <p class="lead" data-aos="fade-up">
+                   Introducing our innovative translation tool! Now, you can effortlessly convert any text into Bhrami script with just a click. This feature aims to bridge the gap between modern communication and ancient writing systems, allowing users to explore and appreciate the beauty of Bhrami.
+               </p>
+           </div>
+        </div>
+     </section>
+     
+      <!-- end s-services -->
+      <section id="portfolio" class="s-portfolio">
+         <div class="row s-porfolio__top">
+            <div class="column large-6 w-900-stack">
+               <div class="section-title" data-num="Photo Gallery" data-aos="fade-up">
+                  <!-- <h3 class="h6">Photo Gallery</h3> -->
+               </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+               <h1 class="display-1" data-aos="fade-up">
+                  Here are some of our tirth yartha we done lately. Feel
+                  free to check them out.
+               </h1>
+            </div>
+         </div>
+         <!-- end s-portfolio__top-->
+         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/1.jpeg" title="The Red Wheel" data-size="1050x700">
+                     <img src="images/gallery/1.jpeg" 
+                        srcset="images/gallery/1.jpeg 1x, images/gallery/1.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Branding</div>
+                     <h4 class="folio-item__title">The Red Wheel</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/2.jpeg" title="Music Life" data-size="1050x700">
+                     <img src="images/gallery/2.jpeg" 
+                        srcset="images/gallery/2.jpeg 1x, images/gallery/2.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Frontend Design</div>
+                     <h4 class="folio-item__title">Music Life</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/3.jpeg" Title="OI Logo" data-size="1050x700">
+                     <img src="images/gallery/3.jpeg" 
+                        srcset="images/gallery/3.jpeg 1x, images/gallery/3.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Branding</div>
+                     <h4 class="folio-item__title">OI Logo</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/4.jpeg" title="Corrugated Sheets" data-size="1050x700">
+                     <img src="images/gallery/4.jpeg" 
+                        srcset="images/gallery/4.jpeg 1x, images/gallery/4.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Frontend Design</div>
+                     <h4 class="folio-item__title">Corrugated Sheets</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/5.jpeg" title="Sand Dunes" data-size="1050x700">
+                     <img src="images/gallery/5.jpeg" 
+                        srcset="images/gallery/5.jpeg 1x, images/gallery/5.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Frontend Design</div>
+                     <h4 class="folio-item__title">Wooocraft</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                  Project Link
+                  </a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+            <div class="column" data-aos="fade-up">
+               <div class="folio-item">
+                  <div class="folio-item__thumb">
+                     <a class="folio-item__thumb-link" href="images/gallery/6.jpeg" title="The Lamp" data-size="1050x700">
+                     <img src="images/gallery/6.jpeg" 
+                        srcset="images/gallery/6.jpeg 1x, images/gallery/6.jpeg 2x" alt="">
+                     </a>
+                  </div>
+                  <div class="folio-item__info">
+                     <div class="folio-item__cat">Frontend Design</div>
+                     <h4 class="folio-item__title">The Lamp</h4>
+                  </div>
+                  <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                  <div class="folio-item__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- end column -->
+         </div>
+         <!-- folio-list -->
+      </section>
+      <!-- end s-portfolio -->
+      <!-- clients
+         ================================================== -->
+      <div id="clients" class="section s-clients">
+         <div class="row testimonials collapse">
+            <div class="column large-12">
+               <div class="testimonial-slider" data-aos="fade-up">
+                  <div class="testimonial-slider__slide">
+                     <p>
+                        Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                        Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                        Laudantium quia consequatur molestias delectus culpa.
+                     </p>
+                     <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                        <strong>Tim Cook</strong>
+                        <span>CEO, Apple</span>
+                        </cite>
+                     </div>
+                  </div>
+                  <!-- end testimonials__slide -->
+                  <div class="testimonial-slider__slide">
+                     <p>
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.
+                     </p>
+                     <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                        <strong>Sundar Pichai</strong>
+                        <span>CEO, Google</span>
+                        </cite>
+                     </div>
+                  </div>
+                  <!-- end testimonials__slide -->
+                  <div class="testimonial-slider__slide">
+                     <p>
+                        Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                        Voluptatem dignissimos ut.
+                     </p>
+                     <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                        <strong>Satya Nadella</strong>
+                        <span>CEO, Microsoft</span>
+                        </cite>
+                     </div>
+                  </div>
+                  <!-- end testimonials__slide -->
+                  <div class="testimonial-slider__slide">
+                     <p>
+                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                        Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                     </p>
+                     <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                        <strong>Jeff Bezos</strong>
+                        <span>CEO, Amazon</span>
+                        </cite>
+                     </div>
+                  </div>
+                  <!-- end testimonials__slide -->
+               </div>
+               <!-- end testimonial slider -->
+            </div>
+            <!-- end column -->
+         </div>
+         <!-- end row -->
+      </div>
+      <!-- end s-clients -->
+      <!-- contact
+         ================================================== -->
+      <section class="s-contact">
+         <div class="row narrower s-contact__top h-text-center">
+            <div class="column">
+               <h3 class="h6">Get In Touch</h3>
+               <h1 class="display-1">
+                  Have an idea or an epic project in mind? Talk to
+                  us. Let us work together and make something great.
+                  Shoot us a message at
+               </h1>
+            </div>
+         </div>
+         <!-- s-footer__top -->
+         <div class="row h-text-center">
+            <div class="column">
+               <p class="s-contact__email" style="font-size: 5rem;">
+                  <a href="mailto:#0">goodlifejainfoundation@gmail.com</a>
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- end s-contact -->
+      <!-- footer
+         ================================================== -->
+      <footer class="s-footer">
+         <div class="row row-y-top">
+            <div class="column large-8 medium-12">
+               <div class="row">
+                  <div class="column large-7 tab-12 s-footer__block">
+                     <h4 class="h6">Developed Under Guidance Of</h4>
+                     <p>
+                        Shrutadharak Sant Chuallk Shri Prgyansh Sagar Ji Maharaj <br>
+                        <!-- <a href="tel:197-543-2345">+197 543 2345</a> -->
+                     </p>
+                  </div>
+                  <!-- <div class="column large-5 tab-12 s-footer__block">
+                     <h4 class="h6">
+                     Follow Us</h4 class="h6">
+                     <ul class="s-footer__list">
                         <li><a href="#0">Facebook</a></li>
                         <li><a href="#0">Twitter</a></li>
                         <li><a href="#0">Instagram</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <p class="tab-content__item-bottom">
-                    <a href="mailto:#0" class="contact-email"
-                      >hello@imminent.com</a
-                    >
-                    <span class="contact-number">
-                      <a href="tel:197-543-2345">+197 543 2345</a>
-                      <a href="tel:123-456-9000">+123 456 9000</a>
-                    </span>
-                  </p>
-                </div>
-              </div> -->
+                        <li><a href="#0">Dribbble</a></li>
+                     </ul>
+                  </div> -->
+               </div>
             </div>
-            <!-- end 03. tab contact -->
-          </div>
-          <!-- end tab content -->
-
-          <footer>
-            <div class="ss-copyright">
-              <span>© Copyright Good Life Jain Foundation 2024</span>
-              <span
-                >Developed under guidance of
-                <a href="https://themewagon.com"
-                  >Chullak Shiri Prgyansh Sagar</a
-                ></span
-              >
+            <div class="column large-4 medium-12 s-footer__block--end">
+               <a href="mailto:goodlifefoundation@gmail.com" class="btn h-full-width">Let's Talk</a>
+               <div class="ss-copyright">
+                  <span>Copyright Good Life Foundation</span> 
+               </div>
             </div>
-
             <div class="ss-go-top">
-              <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 0l8 9h-6v15h-4v-15h-6z"></path>
-                </svg>
-              </a>
+               <a class="smoothscroll" title="Back to Top" href="#top">
+               top
+               </a>
             </div>
-          </footer>
-        </div>
-        <!-- end column -->
+            <!-- end ss-go-top -->
+         </div>
+      </footer>
+      <!-- photoswipe background
+         ================================================== -->
+      <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+         <div class="pswp__bg"></div>
+         <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+               <div class="pswp__top-bar">
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                     "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                     "Zoom in/out"></button>
+                  <div class="pswp__preloader">
+                     <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                           <div class="pswp__preloader__donut"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+               </div>
+               <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                  "Next (arrow right)"></button>
+               <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+               </div>
+            </div>
+         </div>
       </div>
-      <!-- end row -->
-    </section>
-    <!-- end s-info -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/translator/language.js"></script>
-    <script src="js/translator/script.js"></script>
-    <script type="module">
-      // Function to initialize the editor
-      async function initEditor() {
-        // Import the required functions from pintura.js
-        const {
-          appendDefaultEditor,
-          createNode,
-          insertNodeBefore,
-          createDefaultFontSizeOptions,
-          createMarkupEditorFontSizeControl,
-          createMarkupEditorFontSizeOptions,
-          createMarkupEditorLineHeightControl,
-          createMarkupEditorShapeStyleControls,
-          createMarkupEditorToolStyles,
-          createMarkupEditorToolStyle,
-          createMarkupEditorToolbar,
-        } = await import("./js/pintura/pintura.js");
-
-        const editor = appendDefaultEditor(".inline-editor", {
-          src: "./images/slides/slide-01.jpg",
-          imageAnnotation: [
-            {
-              x: 328,
-              y: 328,
-              fontSize: 96,
-              fontWeight: "bold",
-              color: [1, 1, 1],
-              text:
-                document.querySelector("#output-text")?.innerHTML || "Click",
-              disableTextScale: false,
-            },
-          ],
-          markupEditorShapeStyleControls: createMarkupEditorShapeStyleControls({
-            fontSize: createMarkupEditorFontSizeControl(
-              createMarkupEditorFontSizeOptions(createDefaultFontSizeOptions()),
+      <!-- end photoSwipe background -->
+      <!-- Java Script
+         ================================================== -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/translator/language.js"></script>
+      <script src="js/translator/script.js"></script>
+      <script type="module">
+        // Function to initialize the editor
+        async function initEditor() {
+          // Import the required functions from pintura.js
+          const {
+            appendDefaultEditor,
+            createNode,
+            insertNodeBefore,
+            createDefaultFontSizeOptions,
+            createMarkupEditorFontSizeControl,
+            createMarkupEditorFontSizeOptions,
+            createMarkupEditorLineHeightControl,
+            createMarkupEditorShapeStyleControls,
+            createMarkupEditorToolStyles,
+            createMarkupEditorToolStyle,
+            createMarkupEditorToolbar,
+          } = await import("./js/pintura/pintura.js");
+  
+          const editor = appendDefaultEditor(".inline-editor", {
+            src: "images/portfolio/lamp.jpg",
+            imageAnnotation: [
               {
-                enableInput: false,
-              }
-            ),
-            lineHeight: createMarkupEditorLineHeightControl(
-              createMarkupEditorFontSizeOptions(createDefaultFontSizeOptions()),
-              {
-                enableInput: false,
-              }
-            ),
-          }),
-          markupEditorToolStyles: createMarkupEditorToolStyles({
-            text: createMarkupEditorToolStyle("text", {
-              // Set default text shape background to transparent
-              backgroundColor: [0, 0, 0, 0],
-
-              // Set default text shape outline to 0 width and white
-              textOutline: ["0%", [1, 1, 1]],
-
-              // Set default text shadow, shadow will not be drawn if x, y, and blur are 0.
-              textShadow: ["0%", "0%", "0%", [0, 0, 0, 0.5]],
-
-              // Allow newlines in inline text
-              disableNewline: false,
-
-              // Align to left by default, this triggers always showing the text align control
-              textAlign: "left",
-
-              // Enable text formatting
-              format: "html",
-
-              // Enable text scale
-              disableTextScale: false,
-
-              createOnScroll: false,
-            }),
-          }),
-          utils: ["crop", "annotate", "filter", "finetune", "frame", "resize"],
-          util: "annotate",
-          markupEditorToolbar: createMarkupEditorToolbar([
-            "move",
-            "text",
-            "line",
-            "arrow",
-            "rectangle",
-            "ellipse",
-          ]),
-          enableZoomControls: false,
-          cropSelectPresetFilter: "landscape",
-          cropSelectPresetOptions: [
-            [undefined, "Custom"],
-            [1, "Square"],
-
-            // shown when cropSelectPresetFilter is set to 'landscape'
-            [2 / 1, "2:1"],
-            [3 / 2, "3:2"],
-            [4 / 3, "4:3"],
-            [16 / 10, "16:10"],
-            [16 / 9, "16:9"],
-
-            // shown when cropSelectPresetFilter is set to 'portrait'
-            [1 / 2, "1:2"],
-            [2 / 3, "2:3"],
-            [3 / 4, "3:4"],
-            [10 / 16, "10:16"],
-            [9 / 16, "9:16"],
-          ],
-          markupEditorTextInputMode: "modal",
-          enableMoveTool: true,
-          enableAutoSelectMoveTool: true,
-        });
-
-        // Function to browse and select an image file
-        const browse = () =>
-          new Promise((resolve) => {
-            const fileInput = document.createElement("input");
-            fileInput.type = "file";
-            fileInput.style.position = "absolute";
-            fileInput.style.visibility = "hidden";
-            fileInput.accept = "image/*";
-            fileInput.onchange = function () {
-              const [file] = fileInput.files;
-              fileInput.remove(); // remove the input after use
-              resolve(file || undefined);
-            };
-
-            document.body.append(fileInput);
-            fileInput.click(); // Open the file browser
-          });
-
-        // Function to attach the select photo button to the toolbar
-        const attachSelectPhoto = (editor, toolbar) => {
-          insertNodeBefore(
-            createNode("Button", "select-photo", {
-              label: "Select Photo",
-              onclick: async () => {
-                const file = await browse();
-                if (file) {
-                  const fileUrl = URL.createObjectURL(file);
-                  editor.src = fileUrl; // Set the editor source to the selected file
-                  editor.imageAnnotation = [
-                    {
-                      x: 328,
-                      y: 328,
-                      fontSize: 96,
-                      fontWeight: "bold",
-                      color: [1, 1, 1],
-                      disableTextLayout: ["fixed-size"],
-                      text:
-                        document.querySelector("#output-text")?.innerHTML ||
-                        "Click",
-                    },
-                  ];
-                }
+                x: 328,
+                y: 328,
+                fontSize: 96,
+                fontWeight: "bold",
+                color: [1, 1, 1],
+                text:
+                  document.querySelector("#output-text")?.innerHTML || "Click",
+                disableTextScale: false,
               },
+            ],
+            markupEditorShapeStyleControls: createMarkupEditorShapeStyleControls({
+              fontSize: createMarkupEditorFontSizeControl(
+                createMarkupEditorFontSizeOptions(createDefaultFontSizeOptions()),
+                {
+                  enableInput: false,
+                }
+              ),
+              lineHeight: createMarkupEditorLineHeightControl(
+                createMarkupEditorFontSizeOptions(createDefaultFontSizeOptions()),
+                {
+                  enableInput: false,
+                }
+              ),
             }),
-            "alpha-set",
-            toolbar[0]
-          );
-        };
-
-        // Function to download the processed image
-        const downloadFile = (file) => {
-          const link = document.createElement("a");
-          link.style.display = "none";
-          link.href = URL.createObjectURL(file);
-          link.download = file.name;
-
-          document.body.appendChild(link);
-          link.click();
-
-          setTimeout(() => {
-            URL.revokeObjectURL(link.href);
-            link.parentNode.removeChild(link);
-          }, 0);
-        };
-
-        // Customize the editor toolbar
-        editor.willRenderToolbar = (toolbar, env, redraw) => {
-          attachSelectPhoto(editor, toolbar);
-          return [...toolbar];
-        };
-
-        // Handle the image processing event
-        editor.on("process", (imageState) => {
-          downloadFile(imageState.dest);
-        });
-      }
-
-      // Add event listener to the button to initialize the editor on click
-      document
-        .querySelector("#image-editor-btn")
-        .addEventListener("click", initEditor);
-    </script>
-  </body>
+            markupEditorToolStyles: createMarkupEditorToolStyles({
+              text: createMarkupEditorToolStyle("text", {
+                // Set default text shape background to transparent
+                backgroundColor: [0, 0, 0, 0],
+  
+                // Set default text shape outline to 0 width and white
+                textOutline: ["0%", [1, 1, 1]],
+  
+                // Set default text shadow, shadow will not be drawn if x, y, and blur are 0.
+                textShadow: ["0%", "0%", "0%", [0, 0, 0, 0.5]],
+  
+                // Allow newlines in inline text
+                disableNewline: false,
+  
+                // Align to left by default, this triggers always showing the text align control
+                textAlign: "left",
+  
+                // Enable text formatting
+                format: "html",
+  
+                // Enable text scale
+                disableTextScale: false,
+  
+                createOnScroll: false,
+              }),
+            }),
+            utils: ["crop", "annotate", "filter", "finetune", "frame", "resize"],
+            util: "annotate",
+            markupEditorToolbar: createMarkupEditorToolbar([
+              "move",
+              "text",
+              "line",
+              "arrow",
+              "rectangle",
+              "ellipse",
+            ]),
+            enableZoomControls: false,
+            cropSelectPresetFilter: "landscape",
+            cropSelectPresetOptions: [
+              [undefined, "Custom"],
+              [1, "Square"],
+  
+              // shown when cropSelectPresetFilter is set to 'landscape'
+              [2 / 1, "2:1"],
+              [3 / 2, "3:2"],
+              [4 / 3, "4:3"],
+              [16 / 10, "16:10"],
+              [16 / 9, "16:9"],
+  
+              // shown when cropSelectPresetFilter is set to 'portrait'
+              [1 / 2, "1:2"],
+              [2 / 3, "2:3"],
+              [3 / 4, "3:4"],
+              [10 / 16, "10:16"],
+              [9 / 16, "9:16"],
+            ],
+            markupEditorTextInputMode: "modal",
+            enableMoveTool: true,
+            enableAutoSelectMoveTool: true,
+          });
+  
+          // Function to browse and select an image file
+          const browse = () =>
+            new Promise((resolve) => {
+              const fileInput = document.createElement("input");
+              fileInput.type = "file";
+              fileInput.style.position = "absolute";
+              fileInput.style.visibility = "hidden";
+              fileInput.accept = "image/*";
+              fileInput.onchange = function () {
+                const [file] = fileInput.files;
+                fileInput.remove(); // remove the input after use
+                resolve(file || undefined);
+              };
+  
+              document.body.append(fileInput);
+              fileInput.click(); // Open the file browser
+            });
+  
+          // Function to attach the select photo button to the toolbar
+          const attachSelectPhoto = (editor, toolbar) => {
+            insertNodeBefore(
+              createNode("Button", "select-photo", {
+                label: "Select Photo",
+                onclick: async () => {
+                  const file = await browse();
+                  if (file) {
+                    const fileUrl = URL.createObjectURL(file);
+                    editor.src = fileUrl; // Set the editor source to the selected file
+                    editor.imageAnnotation = [
+                      {
+                        x: 328,
+                        y: 328,
+                        fontSize: 96,
+                        fontWeight: "bold",
+                        color: [1, 1, 1],
+                        disableTextLayout: ["fixed-size"],
+                        text:
+                          document.querySelector("#output-text")?.innerHTML ||
+                          "Click",
+                      },
+                    ];
+                  }
+                },
+              }),
+              "alpha-set",
+              toolbar[0]
+            );
+          };
+  
+          // Function to download the processed image
+          const downloadFile = (file) => {
+            const link = document.createElement("a");
+            link.style.display = "none";
+            link.href = URL.createObjectURL(file);
+            link.download = file.name;
+  
+            document.body.appendChild(link);
+            link.click();
+  
+            setTimeout(() => {
+              URL.revokeObjectURL(link.href);
+              link.parentNode.removeChild(link);
+            }, 0);
+          };
+  
+          // Customize the editor toolbar
+          editor.willRenderToolbar = (toolbar, env, redraw) => {
+            attachSelectPhoto(editor, toolbar);
+            return [...toolbar];
+          };
+  
+          // Handle the image processing event
+          editor.on("process", (imageState) => {
+            downloadFile(imageState.dest);
+          });
+        }
+  
+        // Add event listener to the button to initialize the editor on click
+        document
+          .querySelector("#image-editor-btn")
+          .addEventListener("click", initEditor);
+      </script>
+   </body>
 </html>

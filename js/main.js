@@ -1,5 +1,5 @@
 /* ===================================================================
- * Imminent 1.0.0 - Main JS
+ * Flare 1.0.0 - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -9,14 +9,15 @@
     
     const cfg = {
                 scrollDuration : 800, // smoothscroll duration
-                mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // mailchimp url
+                mailChimpURL   : ''   // mailchimp url
                 };
     const $WIN = $(window);
 
+
     // Add the User Agent to the <html>
     // will be used for IE10/IE11 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; rv:11.0))
-    const doc = document.documentElement;
-    doc.setAttribute('data-useragent', navigator.userAgent);
+    // const doc = document.documentElement;
+    // doc.setAttribute('data-useragent', navigator.userAgent);
 
 
    /* preloader
@@ -28,7 +29,7 @@
         $WIN.on('load', function() {
 
             // force page scroll position to top at page refresh
-            // $('html, body').animate({ scrollTop: 0 }, 'normal');
+            $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
@@ -44,6 +45,7 @@
     };
 
 
+
    /* pretty print
     * -------------------------------------------------- */
     const ssPrettyPrint = function() {
@@ -54,92 +56,208 @@
     };
 
 
+
+   /* move header
+    * -------------------------------------------------- */
+    const ssMoveHeader = function () {
+
+        const $hero = $('.s-hero'),
+              $hdr = $('.s-header'),
+              triggerHeight = $hero.outerHeight() - 170;
+
+
+        $WIN.on('scroll', function () {
+
+            let loc = $WIN.scrollTop();
+
+            if (loc > triggerHeight) {
+                $hdr.addClass('sticky');
+            } else {
+                $hdr.removeClass('sticky');
+            }
+
+            if (loc > triggerHeight + 20) {
+                $hdr.addClass('offset');
+            } else {
+                $hdr.removeClass('offset');
+            }
+
+            if (loc > triggerHeight + 150) {
+                $hdr.addClass('scrolling');
+            } else {
+                $hdr.removeClass('scrolling');
+            }
+
+        });
+
+    };
+
+
+
+   /* mobile menu
+    * ---------------------------------------------------- */ 
+    const ssMobileMenu = function() {
+
+        const $toggleButton = $('.s-header__menu-toggle');
+        const $headerContent = $('.s-header__content');
+        const $siteBody = $("body");
+
+        $toggleButton.on('click', function(event){
+            event.preventDefault();
+            $toggleButton.toggleClass('is-clicked');
+            $siteBody.toggleClass('menu-is-open');
+        });
+
+        $headerContent.find('.s-header__nav a, .btn').on("click", function() {
+
+            // at 900px and below
+            if (window.matchMedia('(max-width: 900px)').matches) {
+                $toggleButton.toggleClass('is-clicked');
+                $siteBody.toggleClass('menu-is-open');
+            }
+        });
+
+        $WIN.on('resize', function() {
+
+            // above 900px
+            if (window.matchMedia('(min-width: 901px)').matches) {
+                if ($siteBody.hasClass("menu-is-open")) $siteBody.removeClass("menu-is-open");
+                if ($toggleButton.hasClass("is-clicked")) $toggleButton.removeClass("is-clicked");
+            }
+        });
+
+    };
+
+
+
+   /* photoswipe
+    * ----------------------------------------------------- */
+    const ssPhotoswipe = function() {
+        const items = [],
+              $pswp = $('.pswp')[0],
+              $folioItems = $('.folio-item');
+
+        // get items
+        $folioItems.each( function(i) {
+
+            let $folio = $(this),
+                $thumbLink =  $folio.find('.folio-item__thumb-link'),
+                $title = $folio.find('.folio-item__title'),
+                $caption = $folio.find('.folio-item__caption'),
+                $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
+                $captionText = $.trim($caption.html()),
+                $href = $thumbLink.attr('href'),
+                $size = $thumbLink.data('size').split('x'),
+                $width  = $size[0],
+                $height = $size[1];
+        
+            let item = {
+                src  : $href,
+                w    : $width,
+                h    : $height
+            }
+
+            if ($caption.length > 0) {
+                item.title = $.trim($titleText + $captionText);
+            }
+
+            items.push(item);
+        });
+
+        // bind click event
+        $folioItems.each(function(i) {
+
+            $(this).find('.folio-item__thumb-link').on('click', function(e) {
+                e.preventDefault();
+                let options = {
+                    index: i,
+                    showHideOpacity: true
+                }
+
+                // initialize PhotoSwipe
+                let lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                lightBox.init();
+            });
+
+        });
+    };
+
+
+
    /* slick slider
     * ------------------------------------------------------ */
     const ssSlickSlider = function() {
-            
-        $('.intro-slider').slick({
+
+        $('.clients').slick({
             arrows: false,
+            dots: true,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            pauseOnFocus: false,
+            autoplaySpeed: 1000,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+
+            ]
+        });
+
+        $('.testimonial-slider').slick({
+            arrows: true,
             dots: false,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            fade: true,
-            speed: 3000
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            pauseOnFocus: false,
+            autoplaySpeed: 1500,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
         });
-    };
-
-
-   /* modal
-    * ---------------------------------------------------- */ 
-    const ssModal = function() {
-
-        const modal = document.querySelector(".modal");
-        const trigger = document.querySelector(".modal-trigger");
-        const closeButton = document.querySelector(".modal__close");
-
-        function toggleModal() {
-            modal.classList.toggle("show-modal");
-        }
-        function windowOnClick(event) {
-            if (event.target === modal) {
-                toggleModal();
-            }
-        }
-        function pressEsc(event) {
-            if (event.which=='27') {
-                modal.classList.remove("show-modal");
-            }
-        }
-
-        trigger.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-        window.addEventListener("keyup", pressEsc);
 
     };
 
-    function updateTime() {
-        const now = new Date();
-        
-        const days = Math.floor(now / (1000 * 60 * 60 * 24));
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const seconds = now.getSeconds().toString().padStart(2, '0');
-    
-        // document.getElementById('days').textContent = days;
-        document.getElementById('hours').textContent = hours;
-        document.getElementById('minutes').textContent = minutes;
-        document.getElementById('seconds').textContent = seconds;
-      }
-   /* final countdown
+
+   /* animate on scroll
     * ------------------------------------------------------ */
-    const ssFinalCountdown = function() {
+    const ssAOS = function() {
+        
+        AOS.init( {
+            offset: 100,
+            duration: 600,
+            easing: 'ease-in-out',
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        });
 
-        updateTime(); // Initial call to set the time
-        setInterval(updateTime, 1000); // Update every second
     };
 
-
-   /* tabs
-    * ---------------------------------------------------- */ 
-    const ssTabs = function() {
-
-        const $tabNavListItems = $("ul.tab-nav__list li");
-        const $tabContentItem  = $(".tab-content__item");
-
-        $tabContentItem.hide().first().show();
-
-        $tabNavListItems.on('click', function () {
-
-            $tabNavListItems.removeClass("active");
-            $(this).addClass("active");
-            $tabContentItem.hide();
-
-            const activeTab = $(this).attr("data-id");
-            $("#" + activeTab).fadeIn(1000);
-
-        });
-    }
 
 
    /* alert boxes
@@ -178,7 +296,7 @@
     * ------------------------------------------------------ */
     const ssBackToTop = function() {
         
-        const pxShow      = 500;
+        const pxShow = 800;
         const $goTopButton = $(".ss-go-top")
 
         // Show or hide the button
@@ -194,37 +312,6 @@
     };
 
 
-   /* ajaxchimp
-    * ------------------------------------------------------ */
-    const ssAjaxChimp = function() {
-            
-        $('#mc-form').ajaxChimp({
-            language: 'es',
-            url: cfg.mailChimpURL
-        });
-
-        // Mailchimp translation
-        //
-        //  Defaults:
-        //	 'submit': 'Submitting...',
-        //  0: 'We have sent you a confirmation email',
-        //  1: 'Please enter a value',
-        //  2: 'An email address must contain a single @',
-        //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-        //  4: 'The username portion of the email address is invalid (the portion before the @: )',
-        //  5: 'This email address looks fake or invalid. Please enter a real email address'
-
-        $.ajaxChimp.translations.es = {
-            'submit': 'Submitting...',
-            0: '<i class="fas fa-check"></i> We have sent you a confirmation email',
-            1: '<i class="fas fa-exclamation-triangle"></i> You must enter a valid e-mail address.',
-            2: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            3: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            4: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            5: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.'
-        }
-    };
-
 
    /* initialize
     * ------------------------------------------------------ */
@@ -232,14 +319,14 @@
 
         ssPreloader();
         ssPrettyPrint();
+        ssMoveHeader();
+        ssMobileMenu();
+        ssPhotoswipe();
         ssSlickSlider();
-        ssModal();
-        ssFinalCountdown();
-        ssTabs();
+        ssAOS();
         ssAlertBoxes();
         ssSmoothScroll();
         ssBackToTop();
-        ssAjaxChimp();
 
     })();
 
